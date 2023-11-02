@@ -1,6 +1,5 @@
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { LayoutModule } from 'modules/layout';
 
@@ -17,7 +16,8 @@ describe('AppComponent', () => {
   });
 
   it('should contain header', () => {
-    const header: HTMLHeadingElement = fixture.nativeElement.querySelector('header');
+    const header: HTMLHeadingElement =
+      fixture.nativeElement.querySelector('header');
     expect(header).toBeTruthy();
-  })
+  });
 });
